@@ -1,0 +1,67 @@
+Arguments: 
+  /home/freitasmp/.nvm/versions/node/v12.11.1/bin/node /home/freitasmp/.yarn/bin/yarn.js add react-router-dom
+
+PATH: 
+  /home/freitasmp/.yarn/bin:/home/freitasmp/.config/yarn/global/node_modules/.bin:/home/freitasmp/.yarn/bin:/home/freitasmp/.config/yarn/global/node_modules/.bin:/home/freitasmp/.nvm/versions/node/v12.11.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/freitasmp/Android/Sdk/emulator:/home/freitasmp/Android/Sdk/tools:/home/freitasmp/Android/Sdk/tools/bin:/home/freitasmp/Android/Sdk/platform-tools:/home/freitasmp/android-studio/bin:/home/freitasmp/Android/Sdk/emulator:/home/freitasmp/Android/Sdk/tools:/home/freitasmp/Android/Sdk/tools/bin:/home/freitasmp/Android/Sdk/platform-tools:/home/freitasmp/android-studio/bin
+
+Yarn version: 
+  1.22.0
+
+Node version: 
+  12.11.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:60:26)
+
+npm manifest: 
+  {
+    "name": "farma",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+      "@testing-library/jest-dom": "^4.2.4",
+      "@testing-library/react": "^9.5.0",
+      "@testing-library/user-event": "^7.2.1",
+      "concurrently": "^5.2.0",
+      "electron": "^9.0.2",
+      "electron-builder": "^22.7.0",
+      "electron-is-dev": "^1.2.0",
+      "react": "^16.13.1",
+      "react-dom": "^16.13.1",
+      "react-scripts": "3.4.1",
+      "wait-on": "^5.0.1"
+    },
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject",
+      "electron-dev": "concurrently \"BROWSER=none npm run start\" \"wait-on http://localhost:3000 && electron .\""
+    },
+    "main": "public/main.js",
+    "eslintConfig": {
+      "extends": "react-app"
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
